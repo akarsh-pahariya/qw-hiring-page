@@ -7,7 +7,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Qualit Webs</title>
+    <title>Quality Webs</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="assets/images/logoqu.png">
@@ -44,6 +44,11 @@
 
     <!--Theme Responsive css-->
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
     <script src="assets/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     <style>
@@ -52,6 +57,65 @@
                 width: 95%;
             }
         }
+
+        /* Basic styling for the Swiper container */
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Style each slide */
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Style the image to be circular */
+        .swiper-slide img {
+            border-radius: 50%;
+            width: 150px;
+            /* Adjust the size as needed */
+            height: 150px;
+            /* Adjust the size as needed */
+            object-fit: cover;
+            /* Ensure the image covers the circle */
+            margin-bottom: 20px;
+            /* Space between image and text */
+        }
+
+        /* Style the testimonial content */
+        .testimonial-content {
+            text-align: center;
+            /* Center the text */
+            width: 80%;
+            /* Adjust the width as needed */
+        }
+
+        /* Additional styling for the text inside the testimonial content */
+        .testimonial-content p {
+            margin: 0;
+            padding: 15px 0;
+
+            font-size: 16px;
+
+        }
+
+        /* Styling for navigation buttons */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #000;
+            margin: 0px 50px;
+            /* Change to desired color */
+        }
+
+        #clients {
+            color: #000;
+            font-weight: 500;
+            font-size: large;
+            font-style: bold;
+        }
     </style>
 </head>
 
@@ -59,7 +123,7 @@
 
 
     <!-- Preloader -->
-    <div id="loading">
+    <!-- <div id="loading">
         <div id="loading-center">
             <div id="loading-center-absolute">
                 <div class="object" id="object_one"></div>
@@ -68,7 +132,8 @@
                 <div class="object" id="object_four"></div>
             </div>
         </div>
-    </div><!--End off Preloader -->
+    </div> -->
+    <!--End off Preloader -->
 
 
     <div class="culmn">
@@ -143,7 +208,7 @@
                 <!-- navbar menu -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#home">Home</a></li>
+                        <li><a href="https://qualitywebs.online/index.html">Home</a></li>
                         <li><a href="https://qualitywebs.online/about.html">About</a></li>
                         <li><a href="https://qualitywebs.online/services.html">Service</a></li>
                         <li><a href="https://qualitywebs.online/portfolio.html">Portfolio</a></li>
@@ -166,21 +231,22 @@
                                 <div class="slid_item">
                                     <div class="home_text ">
                                         <h2 class="text-white">Welcome to <strong>Quality Webs</strong></h2>
-                                        <h1 class="text-white">We Do Business All Of Time</h1>
-                                        <h3 class="text-white">- We Create a <strong>Concept</strong> into The Market -
-                                        </h3>
+                                        <h1 class="text-white">"The best investment is in quality hires"</h1>
+                                        <!-- <h3 class="text-white">- We Create a <strong>Concept</strong> into The Market -
+                                        </h3> -->
                                     </div>
 
                                     <div class="home_btns m-top-40">
+                                        <!-- <a href="" class="btn btn-primary m-top-20">Buy Now</a -->
                                         <a href="https://qualitywebs.online/contact.html"
-                                            class="btn btn-primary m-top-20">Contact Us</a>
-                                        <!-- <a href="" class="btn btn-default m-top-20">Take a Tour</a> -->
+                                            class="btn btn-default m-top-20">Contact Us</a>
                                     </div>
                                 </div><!-- End off slid item -->
                                 <div class="slid_item">
                                     <div class="home_text ">
                                         <h2 class="text-white">Welcome to <strong>Quality Webs</strong></h2>
-                                        <h1 class="text-white">We create user friendly websites with Quick Delivery</h1>
+                                        <h1 class="text-white">"Hiring the right talent is the first step towards
+                                            success"</h1>
                                         <!-- <h3 class="text-white">- We Create a <strong>Concept</strong> into The Market - -->
                                         </h3>
                                     </div>
@@ -194,15 +260,15 @@
                                 <div class="slid_item">
                                     <div class="home_text ">
                                         <h2 class="text-white">Welcome to <strong>Quality Webs</strong></h2>
-                                        <h1 class="text-white">WE ARE HERE TO DISRUPT!</h1>
+                                        <h1 class="text-white">"Unlock potential with the right hire"</h1>
                                         <!-- <h3 class="text-white">- We Create a <strong>Concept</strong> into The Market -
                                         </h3> -->
                                     </div>
 
                                     <div class="home_btns m-top-40">
+                                        <!-- <a href="" class="btn btn-primary m-top-20">Buy Now</a -->
                                         <a href="https://qualitywebs.online/services.html"
-                                            class="btn btn-primary m-top-20">Services</a>
-                                        <!-- <a href="" class="btn btn-default m-top-20">Take a Tour</a> -->
+                                            class="btn btn-default m-top-20">Services</a>
                                     </div>
                                 </div>
                             </div>
@@ -218,8 +284,8 @@
 
 
         <!--Featured Section-->
-        <section id="features" class="features">
-            <div class="container">
+        <section id="features" class="features" style="display: flex; justify-content: center; margin-left: 30px;">
+            <div class="container" style="margin: 50px 0px;">
                 <div class="row">
                     <div class="main_features fix roomy-70">
                         <div class="col-md-4">
@@ -285,15 +351,16 @@
 
                                     <div class="business_item">
                                         <div class="business_img">
-                                            <img src="assets/images/imgiomgo.jpeg" alt="" />
+                                            <img src="assets/images/hiring1.webp" alt="" />
+
                                         </div>
                                     </div>
 
-                                    <div class="business_item">
+                                    <!-- <div class="business_item">
                                         <div class="business_img">
-                                            <img src="assets/images/imgmg.png" alt="" />
+                                            <img src="assets/images/imgeses.jpeg" alt="" />
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -306,11 +373,13 @@
                                     <li><i class="fa  fa-arrow-circle-right"></i> Approach</li>
                                     <li><i class="fa  fa-arrow-circle-right"></i> Relevant</li>
                                 </ul>
-                                <p class="m-top-20">Qualitywebs thrives to empower you with the right technology to
+                                <p class="m-top-20" style="font-size: larger;"><strong>Qualitywebs</strong> thrives to
+                                    empower you with the right
+                                    technology to
                                     unlock your true potential. We create customized solutions especially articulated
                                     for our clients. In our remarkable journey of 10+ years in the IT industry, we are
                                     focused on building a quality relationship with our clients that lasts longer.</p>
-                                <p class="m-top-20">
+                                <p class="m-top-20 " style="font-size: larger;">
                                     Quality Webs is an award-winning IT company that helps you accomplish great
                                     achievements with ease. Our Team of Top 1% of Industry Experts excels in leveraging
                                     the highly advanced technology to make your business profitable. With a legacy of
@@ -319,7 +388,7 @@
                                     minds of our passionate team of developers, designers, and business analysts.
                                 </p>
 
-                                <div class="business_btn">
+                                <div class=" business_btn">
                                     <a href="https://qualitywebs.online/services.html"
                                         class="btn btn-default m-top-20">Read More</a>
                                     <!-- <a href="" class="btn btn-primary m-top-20">Buy Now</a> -->
@@ -333,351 +402,129 @@
         </section><!-- End off Business section -->
 
 
-        <!--product section-->
-        <section id="product" class="product">
-            <div class="container">
-                <div class="main_product roomy-80">
-                    <div class="head_title text-center fix">
-                        <h2 class="text-uppercase">What Client Say</h2>
-                        <h5>Clean and Modern design is our best specialist</h5>
-                    </div>
-
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img1.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img1.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img2.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img3.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img3.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img4.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img4.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img1.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img1.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img2.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img3.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img3.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img4.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img4.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img1.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img1.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img2.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img2.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img3.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img3.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-3">
-                                            <div class="port_item xs-m-top-30">
-                                                <div class="port_img">
-                                                    <img src="assets/images/work-img4.jpg" alt="" />
-                                                    <div class="port_overlay text-center">
-                                                        <a href="assets/images/work-img4.jpg" class="popup-img">+</a>
-                                                    </div>
-                                                </div>
-                                                <div class="port_caption m-top-20">
-                                                    <h5>Your Work Title</h5>
-                                                    <h6>- Graphic Design</h6>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <!-- Controls -->
-                        <a class="left carousel-control" href="#carousel-example-generic" role="button"
-                            data-slide="prev">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                            <span class="sr-only">Previous</span>
-                        </a>
-
-                        <a class="right carousel-control" href="#carousel-example-generic" role="button"
-                            data-slide="next">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div><!-- End off row -->
-            </div><!-- End off container -->
-        </section><!-- End off Product section -->
-
 
 
         <!--Test section-->
-        <section id="test" class="test bg-grey roomy-60 fix">
-            <div class="container">
-                <div class="row">
-                    <div class="main_test fix">
-
-                        <div class="col-md-12 col-sm-12 col-xs-12">
-                            <div class="head_title text-center fix">
-                                <h2 class="text-uppercase">What Client Say</h2>
-                                <h5>Clean and Modern design is our best specialist</h5>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="test_item fix">
-                                <div class="item_img">
-                                    <img class="img-circle" src="assets/images/test-img1.jpg" alt="" />
-                                    <i class="fa fa-quote-left"></i>
-                                </div>
-
-                                <div class="item_text">
-                                    <h5>Sarah Smith</h5>
-                                    <h6>envato.com</h6>
-
-                                    <p>Natus voluptatum enim quod necessitatibus quis
-                                        expedita harum provident eos obcaecati id culpa
-                                        corporis molestias.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="test_item fix sm-m-top-30">
-                                <div class="item_img">
-                                    <img class="img-circle" src="assets/images/test-img2.jpg" alt="" />
-                                    <i class="fa fa-quote-left"></i>
-                                </div>
-
-                                <div class="item_text">
-                                    <h5>Sarah Smith</h5>
-                                    <h6>envato.com</h6>
-
-                                    <p>Natus voluptatum enim quod necessitatibus quis
-                                        expedita harum provident eos obcaecati id culpa
-                                        corporis molestias.</p>
-                                </div>
-                            </div>
-                        </div>
+        <div class="swiper mySwiper" style="margin-top: 60px; margin-bottom: 40px;">
+            <h1 style="display: flex; justify-content: center; margin-bottom: 50px;">Testimonials</h1>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/images/person1.jpg" alt="Testimonial 1 Image">
+                    <div class="testimonial-content">
+                        <p>"I can't say enough about the exceptional service we received from
+                            QualityWebs LLC. Their
+                            team truly
+                            understands our industry and took the time to get to know our specific
+                            needs. The candidates
+                            they
+                            provided were not only highly qualified but also a perfect cultural fit for
+                            our
+                            organization. Thanks
+                            to QualityWebs LLC, we've filled several key positions with outstanding
+                            professionals who
+                            have
+                            already made a significant impact. Their attention to detail, personalized
+                            approach, and
+                            dedication
+                            to our success make them stand out as a top recruitment service provider."
+                        </p>
+                        <p id="clients">— Sarah M., HR Manager at Tech Solutions Inc.</p>
                     </div>
                 </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/person2.jpg" alt="Testimonial 2 Image">
+                    <div class="testimonial-content">
+                        <p>"QualityWebs LLC has been a game-changer for our hiring process. As a
+                            fast-growing company,
+                            we often
+                            struggle to find the right talent quickly enough to meet our demands. The
+                            team at
+                            QualityWebs LLC
+                            has consistently delivered high-quality candidates who not only meet our
+                            technical
+                            requirements but
+                            also share our company values. Their expertise, responsiveness, and
+                            proactive communication
+                            have
+                            made our recruitment process seamless and efficient. We highly recommend
+                            QualityWebs LLC to
+                            any
+                            organization looking for a reliable and effective recruitment partner."</p>
+                        <p id="clients">— James L., CEO of Innovatech Corp.</p>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/images/person3.jpg" alt="Testimonial 3 Image">
+                    <div class="testimonial-content">
+                        <p>"We've partnered with QualityWebs LLC for several years now, and they have
+                            always exceeded
+                            our
+                            expectations. Their ability to understand our unique business needs and
+                            identify the right
+                            candidates is unparalleled. The recruitment specialists at QualityWebs LLC
+                            are thorough,
+                            professional, and committed to finding the best fit for our team. We've seen
+                            a noticeable
+                            improvement in our retention rates and overall employee satisfaction since
+                            we started
+                            working with
+                            them. QualityWebs LLC is an invaluable asset to our hiring strategy."</p>
+                        <p id="clients">— Linda K., Director of Talent Acquisition at Global Enterprises
+                            Ltd.</p>
+                    </div>
+                </div>
+                <!-- Repeat for other slides -->
             </div>
-        </section><!-- End off test section -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+        <!-- End off test section -->
 
 
         <!--Brand Section-->
-        <section id="brand" class="brand fix roomy-80">
-            <div class="container">
+        <section id="brand" class="brand fix roomy-80" style="padding: 20px;">
+            <h1 style="display: flex; justify-content: center;">Our Partners</h1>
+            <div class="container" style="margin-left: 120px; margin-top: 100px; margin-bottom: 100px;">
                 <div class="row">
                     <div class="main_brand text-center">
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="brand_item sm-m-top-20">
-                                <img src="assets/images/cbrand-img1.png" alt="" />
+                        <div class="brand_slider">
+                            <div class="col-md-2 col-sm-4 col-xs-6" style="margin-bottom: 50px;">
+                                <div class="brand_item sm-m-top-20">
+                                    <img src="assets/images/cbrand-img1.png" alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="brand_item sm-m-top-20">
-                                <img src="assets/images/cbrand-img2.png" alt="" />
+                            <div class="col-md-2 col-sm-4 col-xs-6" style="margin-bottom: 50px;">
+                                <div class="brand_item sm-m-top-20">
+                                    <img src="assets/images/cbrand-img2.png" alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="brand_item sm-m-top-20">
-                                <img src="assets/images/cbrand-img3.png" alt="" />
+                            <div class="col-md-2 col-sm-4 col-xs-6" style="margin-bottom: 50px;">
+                                <div class="brand_item sm-m-top-20">
+                                    <img src="assets/images/cbrand-img3.png" alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="brand_item sm-m-top-20">
-                                <img src="assets/images/cbrand-img4.png" alt="" />
+                            <div class="col-md-2 col-sm-4 col-xs-6" style="margin-bottom: 50px;">
+                                <div class="brand_item sm-m-top-20">
+                                    <img src="assets/images/cbrand-img4.png" alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="brand_item sm-m-top-20">
-                                <img src="assets/images/cbrand-img5.png" alt="" />
+                            <div class="col-md-2 col-sm-4 col-xs-6" style="margin-bottom: 50px;">
+                                <div class="brand_item sm-m-top-20">
+                                    <img src="assets/images/cbrand-img5.png" alt="" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-2 col-sm-4 col-xs-6">
-                            <div class="brand_item sm-m-top-20">
-                                <img src="assets/images/cbrand-img6.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section><!-- End off Brand section -->
-
-
-        <!--Call to  action section-->
-        <section id="action" class="action bg-primary roomy-40">
-            <div class="container">
-                <div class="row">
-                    <div class="maine_action">
-                        <div class="col-md-8">
-                            <div class="action_item text-center">
-                                <h2 class="text-white text-uppercase">Your Promotion Text Will Be Here</h2>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="action_btn text-left sm-text-center">
-                                <a href="" class="btn btn-default">Purchase Now</a>
+                            <div class="col-md-2 col-sm-4 col-xs-6" style="margin-bottom: 50px;">
+                                <div class="brand_item sm-m-top-20">
+                                    <img src="assets/images/cbrand-img6.png" alt="" />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-
+        <!-- End off Brand section -->
 
 
         <footer id="contact" class="footer action-lage bg-black p-top-80">
@@ -688,14 +535,16 @@
                         <div class="col-md-3">
                             <div class="widget_item widget_about">
                                 <h5 class="text-white">About Us</h5>
-                                <p class="m-top-20">Qualitywebs thrives to empower you with the right technology to
+                                <p class="m-top-20">Qualitywebs thrives to empower you with the right
+                                    technology to
                                     unlock your true potential.</p>
                                 <div class="widget_ab_item m-top-30">
                                     <div class="item_icon"><i class="fa fa-location-arrow"></i></div>
                                     <div class="widget_ab_item_text">
                                         <h6 class="text-white">Location</h6>
                                         <p>
-                                            Office No. 103 , Om Gurudev Plaza Plot No. 26, Scheme No. 54 Indore</p>
+                                            Office No. 103 , Om Gurudev Plaza Plot No. 26, Scheme No. 54
+                                            Indore</p>
                                     </div>
                                 </div>
                                 <div class="widget_ab_item m-top-30">
@@ -769,7 +618,8 @@
                                 <div class="widget_brand m-top-40">
                                     <a href="" class="text-uppercase"><img src="./assets/images/logoqu.png"
                                             alt="Quality Webs Logo" style="margin-bottom: 10px;"></a>
-                                    <p>We help you to adapt with rapid paced change in IT Industry. You get ample
+                                    <p>We help you to adapt with rapid paced change in IT Industry. You
+                                        get ample
                                         opportunities to learn modern edge technology
                                         that can establish you as an IT Expert.</p>
                                 </div>
@@ -822,6 +672,60 @@
 
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <!-- Brand Section-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.brand_slider').slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                dots: false, // Set dots to false to remove pagination
+                arrows: false,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: false // Ensure dots are false for this breakpoint
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            dots: false // Ensure dots are false for this breakpoint
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            dots: false // Ensure dots are false for this breakpoint
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 
 </body>
 
